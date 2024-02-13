@@ -1,7 +1,9 @@
 module.exports = {
-    extends: ['next', 'plugin:prettier/recommended'],
+    extends: ['eslint:recommended','next', 'plugin:prettier/recommended'],
     rules: {
-      // Add any custom rules or overrides
+      "no-unused-vars": "error", // Warning for unused variables
+      "no-console": "error",
+      "camelcase": "error"
     },
   };
   
